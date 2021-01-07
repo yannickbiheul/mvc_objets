@@ -1,5 +1,6 @@
 {
     "name": "yannick/mvc_objets",
+    "description": "Essai mvc objets",
     "type": "project",
     "autoload": {
         "psr-4": {
