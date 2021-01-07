@@ -13,5 +13,7 @@
             "email": "yannickbiheul@outlook.fr"
         }
     ],
-    "require": {}
+    "require": {
+        "klein/klein": "^2.1"
+    }
 }

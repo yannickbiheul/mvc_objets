@@ -4,7 +4,12 @@
 
     use mvc_objets\controllers\FrontController;
 
-    $fc = new FrontController();
-    $fc->index();
+    // $fc = new FrontController();
+    // $fc->index();
+
+    $router = new \Klein\Klein();
+    $router->respond('GET', '/helloworld', function() {
+        return "Hello World !!!";
+    })
 
 ?>
