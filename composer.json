@@ -1,0 +1,16 @@
+{
+    "name": "yannick/mvc_objets",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "mvc_objets\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yannick Biheul",
+            "email": "yannickbiheul@outlook.fr"
+        }
+    ],
+    "require": {}
+}
