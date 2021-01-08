@@ -2,14 +2,23 @@
 
     require_once "vendor/autoload.php";
 
-    use mvc_objets\controllers\FrontController;
+    // use mvc_objets\controllers\FrontController;
 
     // $fc = new FrontController();
-    // $fc->index();
+    
+    $base = dirname($_SERVER['PHP_SELF']);
 
-    $router = new \Klein\Klein();
-    $router->respond('GET', '/helloworld', function() {
-        return "Hello World !!!";
-    })
+    if (ltrim($base, '/')) {
+        $_SERVER['REQUEST_URI'] = substr($_SERVER['REQUEST_URI'], strlen($base));
+    }
+
+    $klein = new \Klein\Klein();
+
+    $klein->respond('GET', '/toto', function() {
+        return "Hello Toto !!!";
+    });
+
+    $klein->dispatch();
+    
 
 ?>
