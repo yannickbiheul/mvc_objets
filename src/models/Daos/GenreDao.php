@@ -20,8 +20,7 @@
             }
         }
 
-        public function createObjectFromFields($fields): genre
-        {
+        public function createObjectFromFields($fields): genre {
         //
         // liaison entre la donnée BDD et l'objet 
         // ici on voit le chainage ->setId->setName 

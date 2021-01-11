@@ -19,9 +19,9 @@
     });
 
     $klein->respond('GET','/genres', function() use($fc) {
-    // use est une manière d'effectuer une closure en PHP 
-    $fc->genres();
-});
+        // use est une manière d'effectuer une closure en PHP 
+        $fc->genres();
+    });
 
     $klein->dispatch();
     
