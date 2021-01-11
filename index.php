@@ -4,7 +4,13 @@
 
     use mvc_objets\controllers\FrontController;
 
-    $fc = new FrontController();
+    use Twig\Environment;
+    use Twig\Loader\FilesystemLoader;
+
+    $loader = new FilesystemLoader(__DIR__ . '/src/views');
+    $twig = new Environment($loader, ['cache' => false]);
+
+    $fc = new FrontController($twig);
     
     $base = dirname($_SERVER['PHP_SELF']);
 

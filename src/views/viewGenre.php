@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php
-        foreach($genres as $genre) {?>
-            <li><?= $genre->getName() ?></li><?php
+        foreach($genres as $genre) {
+            echo '<p>' . $genre->getName() . '</p>';
         }
     ?>
 </body>
