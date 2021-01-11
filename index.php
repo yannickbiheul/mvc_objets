@@ -2,9 +2,9 @@
 
     require_once "vendor/autoload.php";
 
-    // use mvc_objets\controllers\FrontController;
+    use mvc_objets\controllers\FrontController;
 
-    // $fc = new FrontController();
+    $fc = new FrontController();
     
     $base = dirname($_SERVER['PHP_SELF']);
 
@@ -17,6 +17,11 @@
     $klein->respond('GET', '/toto', function() {
         return "Hello Toto !!!";
     });
+
+    $klein->respond('GET','/genres', function() use($fc) {
+    // use est une manière d'effectuer une closure en PHP 
+    $fc->genres();
+});
 
     $klein->dispatch();
     
