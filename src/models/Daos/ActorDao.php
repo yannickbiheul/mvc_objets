@@ -27,8 +27,8 @@
         //
             $actor = new actor();
             $actor->setId($fields['id'])
-                ->setFirstName($fields['firstName'])
-                ->setLastName($fields['lastName']);                      
+                ->setFirstName($fields['first_Name'])
+                ->setLastName($fields['last_Name']);                      
 
             return $actor;
         }
