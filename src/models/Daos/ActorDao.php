@@ -26,9 +26,9 @@
         // ici on voit le chainage ->setId->setName 
         //
             $actor = new actor();
-            $actor->setId($fields['id'])
-                ->setFirstName($fields['first_Name'])
-                ->setLastName($fields['last_Name']);                      
+            $actor->setId($fields['id']);
+            $actor->setFirstName($fields['first_Name']);
+            $actor->setLastName($fields['last_Name']);                      
 
             return $actor;
         }
