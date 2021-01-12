@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Genre{% endblock %}
+{% block title %}Actor{% endblock %}
 
 {% block head %}
 
@@ -8,8 +8,8 @@
 
 {% block content %}
 
-    {% for genre in genres %}
-        <p>{{ genre.name }}</p>
+    {% for actor in actors %}
+        <p>{{ actor.name }}</p>
     {% endfor %}
 
 {% endblock %}

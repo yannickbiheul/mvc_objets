@@ -29,6 +29,15 @@
             // include_once __DIR__.'/../views/viewGenre.php';
             echo $this->twig->render('genre.html.twig', [ "genres" => $genres]);
         }
+
+        public function actors() {
+            $actors = $this->actorService->getAllActors();
+            // foreach($genres as $genre) {
+            //     echo $genre->getName();
+            // }
+            // include_once __DIR__.'/../views/viewGenre.php';
+            echo $this->twig->render('actor.html.twig', [ "actors" => $actors]);
+        }
         
     }
 

@@ -29,6 +29,11 @@
         $fc->genres();
     });
 
+    $klein->respond('GET','/actors', function() use($fc) {
+        // use est une manière d'effectuer une closure en PHP 
+        $fc->actors();
+    });
+
     $klein->dispatch();
     
 
