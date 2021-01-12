@@ -23,6 +23,11 @@ class GenreService
         return $genres;
     }
 
+    public function getById($id) {
+        $genre = $this->genreDao->findById($id);
+        return $genre;
+    }
+
 }
 
 ?>

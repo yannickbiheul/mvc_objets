@@ -38,6 +38,11 @@
             // include_once __DIR__.'/../views/viewGenre.php';
             echo $this->twig->render('actor.html.twig', [ "actors" => $actors]);
         }
+
+        // public function genre($id) {
+        //     $genre = $this->genreService->getByid($id);
+        //     echo $this->twig>render('genreseul.html.twig', ["genres" => $genres]);
+        // }
         
     }
 
